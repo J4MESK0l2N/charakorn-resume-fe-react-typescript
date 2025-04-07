@@ -77,15 +77,18 @@ const App: React.FC = () => {
     language as "th" | "en"
   );
 
-  console.log("language :>> ", language);
-
   useEffect(() => {
     getProfileData();
   }, []);
 
   const getProfileData = async () => {
     const response = await fetch(
-      `${process.env.REACT_APP_BASE_API_URL}/profile`
+      `${process.env.REACT_APP_BASE_API_URL}/profile`,
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
     );
 
     const resp: AboutMeData[] = await response.json();
@@ -95,7 +98,12 @@ const App: React.FC = () => {
   };
 
   const getToolsData = async () => {
-    const response = await fetch(`${process.env.REACT_APP_BASE_API_URL}/tools`);
+    const response = await fetch(`${process.env.REACT_APP_BASE_API_URL}/tools`
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
     const resp: ToolsData[] = await response.json();
 
@@ -106,6 +114,11 @@ const App: React.FC = () => {
   const getExperience = async () => {
     const response = await fetch(
       `${process.env.REACT_APP_BASE_API_URL}/organizations`
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
     );
 
     let resp: ExperienceData[] = await response.json();
