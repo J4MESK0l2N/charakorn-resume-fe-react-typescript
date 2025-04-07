@@ -1,0 +1,29 @@
+.contact-container {
+    background-color: #191919;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-content {
+    width: 80%;
+    padding: 20px 60px 60px 60px;
+}
+
+.contact-detail {
+    color: #8491A0;
+    font-size: clamp(12px, 2vw + 4px, 16px);
+    text-align: left;
+
+    display: flex;
+    gap: 5px
+}
+
+@media only screen and (max-width: 640px) {
+    .contact-content {
+        width: 100%;
+
+    }
+}

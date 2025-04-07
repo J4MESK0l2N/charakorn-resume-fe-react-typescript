@@ -1,0 +1,59 @@
+.about-me-detail {
+    padding: 0px 20px;
+    font-size: clamp(14px, 2vw + 4px, 18px);
+    max-width: 700px;
+    color: #8491A0
+}
+
+.about-me-job-position {
+    margin-bottom: 20px;
+    margin-top: -10px;
+    font-size: clamp(20px, 2vw + 12px, 32px);
+    color: #C5C5C5;
+}
+
+.about-me-image-profile {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+
+    width: 200px;
+    height: 200px;
+}
+
+.about-me-container {
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-full-name {
+    font-size: clamp(32px, 2vw + 18px, 55px);
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.about-me-cv-download-btn {
+    margin-top: 40px;
+    padding: 10px 30px;
+    font-size: clamp(18px, 2vw + 6px, 24px);
+    border-radius: 30px;
+    border: 1px solid white;
+    transition: .2s;
+
+    cursor: pointer;
+
+    text-decoration: none;
+    color: white
+}
+
+.about-me-cv-download-btn:hover {
+    color: #161513;
+    transition: .2s;
+    background-color: white;
+}
