@@ -68,10 +68,16 @@ const App: React.FC = () => {
   const [aboutMe, setAboutMe] = useState<AboutMeData | null>(null);
   const [tools, setTools] = useState<ToolsData[] | null>(null);
   const [experience, setExperience] = useState<ExperienceData[] | null>(null);
-  let language = (i18next.language as "th" | "en") || "th";
+  let language =
+    i18next.language === "th" || i18next.language === "en"
+      ? i18next.language
+      : "th";
+
   const [currrentLanguage, setCurrentLanguage] = useState<"th" | "en">(
-    language
+    language as "th" | "en"
   );
+
+  console.log("language :>> ", language);
 
   useEffect(() => {
     getProfileData();
