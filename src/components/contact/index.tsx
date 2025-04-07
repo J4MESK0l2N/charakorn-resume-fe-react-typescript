@@ -34,8 +34,6 @@ interface ContactProps {
 const Contact: React.FC<ContactProps> = ({ data, currrentLanguage }) => {
   const { t } = useTranslation();
 
-  console.log("data :>> ", data);
-
   return (
     <div className={`contact-container`}>
       <div className="contact-content">
