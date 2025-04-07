@@ -98,7 +98,7 @@ const App: React.FC = () => {
   };
 
   const getToolsData = async () => {
-    const response = await fetch(`${process.env.REACT_APP_BASE_API_URL}/tools`
+    const response = await fetch(`${process.env.REACT_APP_BASE_API_URL}/tools`,
       {
         headers: {
           "Content-Type": "application/json",
