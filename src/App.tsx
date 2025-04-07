@@ -98,12 +98,14 @@ const App: React.FC = () => {
   };
 
   const getToolsData = async () => {
-    const response = await fetch(`${process.env.REACT_APP_BASE_API_URL}/tools`,
+    const response = await fetch(
+      `${process.env.REACT_APP_BASE_API_URL}/tools`,
       {
         headers: {
           "Content-Type": "application/json",
         },
-      });
+      }
+    );
 
     const resp: ToolsData[] = await response.json();
 
@@ -113,7 +115,7 @@ const App: React.FC = () => {
 
   const getExperience = async () => {
     const response = await fetch(
-      `${process.env.REACT_APP_BASE_API_URL}/organizations`
+      `${process.env.REACT_APP_BASE_API_URL}/organizations`,
       {
         headers: {
           "Content-Type": "application/json",
