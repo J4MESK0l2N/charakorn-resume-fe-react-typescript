@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# ReactJS with Typescript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ สามารถเข้าชมหน้าเว็บไซต์ได้ที่นี่ [Charakorn Resume Website](https://charakorn-resume.d1lvbrbjhvc8zy.amplifyapp.com/).
 
 ## Available Scripts
 
